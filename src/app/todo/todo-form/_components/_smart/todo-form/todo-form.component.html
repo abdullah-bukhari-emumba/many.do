@@ -1,0 +1,15 @@
+<div class="text-center space-y-2">
+  <h1 class="title">Tasks</h1>
+  <p class="subtitle">Keep track of your daily tasks</p>
+</div>
+
+<form (ngSubmit)="addTodo()" class="form-container">
+  <input
+    type="text"
+    placeholder="Add a new task..."
+    [(ngModel)]="newTodo"
+    name="newTodo"
+    class="todo-input"
+    maxlength="100"
+  >
+</form>

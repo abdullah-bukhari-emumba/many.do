@@ -1,0 +1,27 @@
+.title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+}
+
+.form-container {
+  margin: 2rem 0;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+
+  &:focus {
+    border-color: var(--color-primary);
+  }
+}

@@ -1,0 +1,25 @@
+<div class="filters">
+  <button
+    *ngFor="let f of filters"
+    (click)="setFilter(f)"
+    [class.active]="currentFilter === f"
+    class="filter-button"
+  >
+    {{f | titlecase}}
+  </button>
+</div>
+
+<div class="todo-list">
+  <div *ngIf="filteredTodos.length === 0" class="empty-state">
+    <p>No tasks yet</p>
+  </div>
+
+  <app-todo-item
+    *ngFor="let todo of filteredTodos"
+    [todo]="todo"
+    (toggleComplete)="toggleTodo($event)"
+    (delete)="deleteTodo($event)"
+    (edit)="updateTodo($event)"
+  >
+  </app-todo-item>
+</div>
