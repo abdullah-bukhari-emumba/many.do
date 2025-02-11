@@ -1,6 +1,82 @@
-# ManyDoV2
+# many.do
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+## 🚀 Angular Topics Covered
+
+### 📌 **Component Architecture**
+- Smart/Container Components: `TodoFormComponent`, `TodoListComponent`
+- Dumb/Presentational Components: `TodoItemComponent`
+- Component Lifecycle: `ngOnInit`
+
+### 📌 **Angular Modules**
+- Feature Modules: `TodoModule`, `TodoFormModule`, `TodoListModule`
+- Core Module: `CoreModule`
+- Module imports/exports & declarations
+
+### 📌 **Data Binding**
+- Two-way binding: `[(ngModel)]`
+- Event binding: `(click)`, `(ngSubmit)`, `(blur)`
+- Property binding: `[class.active]`, `[value]`
+- String interpolation: `{{ expression }}`
+
+### 📌 **Directives**
+- Structural: `*ngFor`, `*ngIf`
+- Attribute: `[class.completed]`
+- Template reference variables: `#editInput`
+
+### 📌 **Component Communication**
+- `@Input()` decorators for passing data down
+- `@Output()` decorators with `EventEmitter` for passing data up
+- Parent-child component interaction
+
+### 📌 **Services & Dependency Injection**
+- Injectable services: `TodoService`
+- Dependency injection in components
+- `providedIn: 'root'` for service registration
+
+### 📌 **RxJS Usage**
+- `BehaviorSubject` for state management
+- Observable streams
+- Subscription handling in components
+
+### 📌 **Template Syntax**
+- Template reference variables
+- Event filtering: `(keydown.enter)`, `(keydown.escape)`
+- Local template variables
+- `ngTemplateOutlet`
+
+### 📌 **Forms**
+- Template-driven forms
+- `FormsModule` integration
+- Form events and validation
+
+### 📌 **State Management**
+- Local storage integration
+- Service-based state management
+- Component-level state
+
+### 📌 **Styling**
+- Component-specific styles: `component.scss`
+- Global styles: `styles.scss`
+- CSS variables
+- View encapsulation
+
+### 📌 **Angular Best Practices**
+- Folder structure (`components/_smart`, `components/_dumb`)
+- Barrel files
+- Interface definitions
+- Single Responsibility Principle
+
+### 📌 **TypeScript Features**
+- Interfaces
+- Type safety
+- Access modifiers
+- Strong typing
+
+### 📌 **Angular CLI Usage**
+- Project structure
+- Module organization
+- Component generation patterns
+
 
 ## Development server
 
