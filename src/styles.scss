@@ -9,6 +9,7 @@
   --max-width: 800px;
   --header-height: 60px;
   --container-padding: 1rem;
+  font-size: 62.5%;
 }
 
 * {
@@ -23,6 +24,7 @@ body {
   background: var(--color-background);
   min-height: 100vh;
   line-height: 1.5;
+  font: 62.5%;
 }
 
 @keyframes float {
