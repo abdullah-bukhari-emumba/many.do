@@ -10,12 +10,12 @@
 </div>
 
 <div class="todo-list">
-  <div *ngIf="filteredTodos.length === 0" class="empty-state">
+  <div *ngIf="newThing.length === 0" class="empty-state">
     <p>No tasks yet</p>
   </div>
 
   <app-todo-item
-    *ngFor="let todo of filteredTodos"
+    *ngFor="let todo of newThing"
     [todo]="todo"
     (toggleComplete)="toggleTodo($event)"
     (delete)="deleteTodo($event)"

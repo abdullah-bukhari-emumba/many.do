@@ -19,19 +19,25 @@ export class TodoListComponent implements OnInit {
   ngOnInit(): void {
     this.todoService.getTodos().subscribe(todos => {
       this.todos = todos;
+      this.newThing = todos;
     });
   }
 
+  newThing: any 
+
   get filteredTodos(): Todo[] {
-    return this.todos.filter(todo => {
-      if (this.currentFilter === 'active') return !todo.completed;
-      if (this.currentFilter === 'completed') return todo.completed;
-      return true;
-    });
+   return this.todos
   }
 
   setFilter(filter: 'all' | 'active' | 'completed'): void {
     this.currentFilter = filter;
+
+     this.newThing = this.todos.filter(todo => {
+      if (this.currentFilter === 'active') return !todo.completed;
+      if (this.currentFilter === 'completed') return todo.completed;
+      return true;
+    });
+
   }
 
   toggleTodo(id: string): void {
