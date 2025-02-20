@@ -9,8 +9,8 @@ import { TodoService } from './todo.service';
   imports: [
     CommonModule
   ],
-  providers: [
-    TodoService
-  ]
+  // providers: [
+  //   TodoService
+  // ]
 })
 export class CoreModule { }
