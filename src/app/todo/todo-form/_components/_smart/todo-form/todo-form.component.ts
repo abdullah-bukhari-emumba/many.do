@@ -12,11 +12,13 @@ export class TodoFormComponent {
   newTodo = '';
 
   constructor(private todoService: TodoService) {}
-
   addTodo(): void {
-    if (this.newTodo.trim()) {
-      this.todoService.addTodo(this.newTodo);
+    const trimVal: string = this.newTodo.trim();
+    // this.trimVal = this.newTodo.trim();
+    if (!trimVal) { return }
+    // if (this.trimVal) {
+      this.todoService.addTodo(trimVal);
       this.newTodo = '';
-    }
+    // }
   }
 }
